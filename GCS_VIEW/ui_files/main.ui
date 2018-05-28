@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>824</width>
     <height>600</height>
    </rect>
   </property>
@@ -28,7 +28,7 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>251</width>
+      <width>275</width>
       <height>91</height>
      </rect>
     </property>
@@ -161,7 +161,7 @@ color: white;
     <property name="geometry">
      <rect>
       <x>460</x>
-      <y>80</y>
+      <y>90</y>
       <width>161</width>
       <height>81</height>
      </rect>
@@ -243,9 +243,9 @@ color: white;
    <widget class="QDial" name="dial">
     <property name="geometry">
      <rect>
-      <x>289</x>
+      <x>269</x>
       <y>440</y>
-      <width>81</width>
+      <width>111</width>
       <height>91</height>
      </rect>
     </property>
@@ -327,8 +327,8 @@ color: white;
    <widget class="QLabel" name="label_11">
     <property name="geometry">
      <rect>
-      <x>380</x>
-      <y>480</y>
+      <x>370</x>
+      <y>470</y>
       <width>16</width>
       <height>17</height>
      </rect>
@@ -355,8 +355,8 @@ color: white;
      <rect>
       <x>220</x>
       <y>380</y>
-      <width>231</width>
-      <height>181</height>
+      <width>221</width>
+      <height>52</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -364,28 +364,24 @@ color: white;
 
 </string>
     </property>
-    <widget class="QLabel" name="label_13">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>10</y>
-       <width>211</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: oblique 15pt &quot;DejaVu Sans&quot;;
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_13">
+       <property name="styleSheet">
+        <string notr="true">font: oblique 15pt &quot;DejaVu Sans&quot;;
 background: black;
 color: white;
 </string>
-     </property>
-     <property name="text">
-      <string>Voltage indicator</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-    </widget>
+       </property>
+       <property name="text">
+        <string>Voltage indicator</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
    <widget class="QLCDNumber" name="lcdNumber_2">
     <property name="geometry">
@@ -400,7 +396,7 @@ color: white;
      <bool>true</bool>
     </property>
     <property name="value" stdset="0">
-     <double>21.210000000000001</double>
+     <double>21.000000000000000</double>
     </property>
     <property name="intValue" stdset="0">
      <number>21</number>
@@ -530,7 +526,7 @@ color: white;
       </rect>
      </property>
      <property name="text">
-      <string>Number of Satalites</string>
+      <string>SATS</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_20">
@@ -572,10 +568,10 @@ color: white;
     <widget class="QLabel" name="label_22">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>170</y>
-       <width>41</width>
-       <height>16</height>
+       <x>90</x>
+       <y>169</y>
+       <width>111</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -596,9 +592,9 @@ color: white;
      <property name="geometry">
       <rect>
        <x>80</x>
-       <y>140</y>
+       <y>139</y>
        <width>121</width>
-       <height>20</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -893,9 +889,9 @@ color: white;
      <property name="geometry">
       <rect>
        <x>100</x>
-       <y>130</y>
+       <y>131</y>
        <width>111</width>
-       <height>21</height>
+       <height>20</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -918,7 +914,7 @@ color: white;
        <x>100</x>
        <y>90</y>
        <width>111</width>
-       <height>20</height>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
@@ -957,14 +953,6 @@ color: white;</string>
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <zorder>label_38</zorder>
-    <zorder>label_41</zorder>
-    <zorder>label_44</zorder>
-    <zorder>label_47</zorder>
-    <zorder>label_48</zorder>
-    <zorder>label_49</zorder>
-    <zorder>label_50</zorder>
-    <zorder>frame_5</zorder>
    </widget>
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
@@ -1012,7 +1000,7 @@ color: white;
        <height>61</height>
       </rect>
      </property>
-     <property name="numDigits">
+     <property name="digitCount">
       <number>3</number>
      </property>
      <property name="intValue" stdset="0">
