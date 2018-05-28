@@ -32,6 +32,7 @@ class ExampleApp(QtGui.QMainWindow, ui_main.Ui_MainWindow):
         self.packet_cnt(50)
         self.sys_time()
         self.set_telemetry("HEllo tel")
+        self.set_softstate("descent")
 
     def mission_time(self,i=0):
         self.lcdNumber_2.setProperty("intValue", i)
@@ -65,6 +66,9 @@ class ExampleApp(QtGui.QMainWindow, ui_main.Ui_MainWindow):
 
     def set_telemetry(self,text=""):
         self.label_55.setText(_translate("MainWindow", text, None))
+
+    def set_softstate(self,text=""):
+        self.label_53.setText(_translate("MainWindow", text, None))
 
 
 
