@@ -15,7 +15,7 @@ except AttributeError:
     def _fromUtf8(s):
         return s
 
-try:
+dialtry:
     _encoding = QtGui.QApplication.UnicodeUTF8
     def _translate(context, text, disambig):
         return QtGui.QApplication.translate(context, text, disambig, _encoding)
